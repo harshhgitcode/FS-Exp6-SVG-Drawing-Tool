@@ -21,22 +21,38 @@ body {
 .controls {
     display: flex;
     gap: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 button {
-    background: #1e80ff;
-    color: white;
     border: none;
     padding: 10px 18px;
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
-    transition: 0.2s;
+    color: white;
 }
 
-button:hover {
-    background: #1668d8;
+#undoBtn { background: #1e80ff; }
+#clearBtn { background: #ff4d4d; }
+
+.colors {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.color-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+
+.color-btn.active {
+    border: 3px solid black;
 }
 
 .drawing-area {
